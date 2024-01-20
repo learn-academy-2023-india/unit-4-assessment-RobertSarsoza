@@ -12,15 +12,37 @@
 
 // a) Create a test with expect statements for each of the variables provided.
 
-const fibonacciLength1 = 6
-// Expected output: [1, 1, 2, 3, 5, 8]
+function fibonacci(n) {
+    if (n <= 1) {
+      return n;
+    } else {
+      return fibonacci(n - 1) + fibonacci(n - 2)
+    }
+  }
+  // Example: Generate Fibonacci sequence up to the 6th number
 
-const fibonacciLength2 = 10
-// Expected output: [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+  test ('Generates Fib sequence up to 6th number', () => {
+    const fibonacciLength1 = 6
+    const fibonacciSequence = Array.from({ length: fibonacciLength1}, (_, i) => fibonacci(i +1))
+    const expectedSequence = [1, 1, 2, 3, 5, 8]
+    expect (fibonacciSequence).toEqual(expectedSequence)
+})
+// Expected output: [0, 1, 1, 2, 3, 5, 8]
+
+// Example: Generate Fibonacci sequence up to the 10th number
+
+test('Generates Fib sequence up to 10th number', () => {
+    const fibonacciLength2 = 10;
+    const fibonacciSequence = Array.from({ length: fibonacciLength2}, (_, i) => fibonacci(i +1));
+    const expectedSequence2 = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+    expect(fibonacciSequence).toEqual(expectedSequence2)
+  })
+//   Expected output:  [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
 
 // b) Create the function that makes the test pass.
+// line 15-21
 
-// Pseudo code:
+Pseudo code:
 
 // --------------------2) Create a function that takes in an object that contains up votes and down votes and returns the end tally.
 
