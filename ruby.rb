@@ -5,12 +5,16 @@
 # Run the file with the following command: $ rspec ruby_spec.rb
 
 # Add comments to your code explaining your approach
-
+# I did not understand the directions unfortunately and chatgpt did all of this code. the comments are my own
 class Bike
+    # creates a class
     attr_accessor :wheels, :current_speed
+    # creates a setter and getter method
   attr_reader :model
+    # creates a getter method 
 
   def initialize(model)
+    # sets model attribute to the class bike
     @model = model
     @wheels = 2
     @current_speed = 0
@@ -29,3 +33,4 @@ class Bike
   end
 
 end
+
