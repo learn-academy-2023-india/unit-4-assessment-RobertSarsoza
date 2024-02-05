@@ -16,9 +16,8 @@ Similarities
 3. 
 
 Differences
-Ruby isnt as picky with santax 
 
-1. 
+1. Ruby isnt as picky with santax 
 2. 
 3. 
 
@@ -86,6 +85,7 @@ Object/Hash Declaration
 2. What does it mean to implement a TDD workflow?
 
 Your answer:
+I did not have an answer without research.
 
 Researched answer:
 
@@ -94,6 +94,7 @@ Implementing a Test-Driven Development (TDD) workflow is a software development 
 Write a Test:
 
 Start by writing a test that defines a function or improvement of a function, which should fail initially because the function is not implemented yet. These tests are often written in a testing framework  (Jest / RSpec)
+
 Run the Test:
 
 Run the test to confirm that it fails, as expected. This verifies that the test is correctly checking for the desired functionality.
